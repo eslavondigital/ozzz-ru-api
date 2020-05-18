@@ -49,7 +49,7 @@ class CreateOrder
     {
         $data = json_decode($this->raw_body_data);
         if (isset($data->errors)) {
-            switch ($data->errors) {
+            switch ($data->errors[0]) {
                 case "Please specify less than or equal to maximum quantity";
                     $answer = "Ошибка! Колличество указано больше максимального!";
                     break;
