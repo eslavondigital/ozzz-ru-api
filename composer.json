@@ -20,6 +20,6 @@
   "require": {
     "php": "7.4.*",
     "ext-json": "*",
-    "guzzlehttp/guzzle": "6.*"
+    "guzzlehttp/guzzle": "6.5.3"
   }
 }
