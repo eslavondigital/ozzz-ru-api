@@ -49,10 +49,16 @@ class StatusOrder
         } else {
             switch ($data->status) {
                 case "Inprogress";
-                    $answer = "Статус: Выполняется\nСтоимость: ".$data->charge;
+                    $answer = "Выполняется\nСтоимость: ".$data->charge;
                     break;
                 case "Completed";
-                    $answer = "Статус: Завершен\nСтоимость: ".$data->charge;
+                    $answer = "Завершен\nСтоимость: ".$data->charge;
+                    break;
+                case "Cancelled";
+                    $answer = "Отменен\nСтоимость: ".$data->charge;
+                    break;
+                case "Pending";
+                    $answer = "Запускается\nСтоимость: ".$data->charge;
                     break;
             }
         }
