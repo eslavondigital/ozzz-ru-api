@@ -1,9 +1,27 @@
 <?php
+/**
+ * Ozzz-ru-api  - Package for working with the Ozzz.ru site API
+ * PHP Version 7.4.
+ *
+ * @see https://github.com/eslavondigital/ozzz-ru-api The Ozzz-ru-api GitHub project
+ *
+ * @author    Vinogradov Victor <eslavon.work.victor@gmail.com>
+ * @author    Eslavon Digital <eslavondigital@gmail.com>
+ * @copyright 2020 Vinogradov Victor
+ * @copyright 2020 Eslavon Digital
+ * @license   https://github.com/eslavondigital/ozzz-ru-api/blob/master/LICENSE MIT License
+ * @note      This program is distributed in the hope that it will be useful - WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE.
+ */
 
 
 namespace Eslavon\Ozzz;
 
-
+/**
+ * Class Request
+ * @package Eslavon\Ozzz
+ */
 class Request
 {
     /**
@@ -31,7 +49,6 @@ class Request
 
     /**
      * Send Post Request
-     * @param string $method
      * @param array $parameters
      * @return string
      */
